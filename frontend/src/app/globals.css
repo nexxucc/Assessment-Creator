@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f4f5f7;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #f8b84e;
+  color: black;
+}
+
+.font-paper {
+  font-family: var(--font-paper), serif;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .paper-question {
+    break-inside: avoid;
+  }
+}
